@@ -1,0 +1,45 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr 1fr;
+}
+
+.dialogsItems {
+    margin: 0 auto;
+    display: grid;
+}
+
+.dialogsItems .dialog {
+    margin-top: 20px;
+    text-decoration-line: none;
+    font-size: 20px;
+    color: black;
+}
+
+.dialogsItems .dialog:hover {
+    color: gold;
+}
+
+.dialogsItems .dialog .active {
+    text-decoration-line: none;
+    color: coral;
+}
+
+.avatar {
+    display: grid;
+    justify-items: right;
+}
+
+.dialogs .avatar img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.messages .message {
+    font-size: 15px;
+    display: grid;
+    margin-top: 11px;
+    padding-top: 25px;
+}
+
+

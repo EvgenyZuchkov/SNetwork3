@@ -1,0 +1,38 @@
+.nav {
+    grid-area: n;
+    background-color: darkgray;
+    padding: 20px;
+
+}
+
+.sidebar {
+    margin-top: 200px;
+}
+
+.sidebar .name{
+    text-align: center;
+    margin-right: 7px;
+}
+
+.nav .sidebarItems {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.item {
+    color: black;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+.item:hover {
+    color: gold;
+}
+
+.active {
+    color: burlywood;
+    text-decoration-line: none;
+    font-size: 20px;
+}

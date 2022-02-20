@@ -1,0 +1,19 @@
+.item {
+    display: grid;
+    grid-template-columns: 150px 0.5fr 1fr;
+    align-items:  center;
+    padding: 10px 0 0 20px
+}
+
+.item img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.item .message {
+
+}
+
+.item .like {
+
+}
