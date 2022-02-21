@@ -1,9 +1,27 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 0.3fr 0.5fr 1fr;
+    grid-template-columns: 0.8fr 1fr 1.1fr;
+    grid-template-rows: 0.6fr 0.7fr;
+    gap: 0 0;
+    grid-template-areas:
+    "avatar dialogs messages"
+    ". sendBlock .";
+}
+
+.avatar {
+    grid-area: avatar;
+    display: grid;
+    justify-items: right;
+}
+
+.dialogs .avatar img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
 }
 
 .dialogsItems {
+    grid-area: dialogs;
     margin: 0 auto;
     display: grid;
 }
@@ -24,15 +42,8 @@
     color: coral;
 }
 
-.avatar {
-    display: grid;
-    justify-items: right;
-}
-
-.dialogs .avatar img {
-    width: 50px;
-    border-radius: 50%;
-    margin-top: 10px;
+.messages {
+    grid-area: messages;
 }
 
 .messages .message {
@@ -40,6 +51,12 @@
     display: grid;
     margin-top: 11px;
     padding-top: 25px;
+}
+
+.sendBlock {
+    grid-area: sendBlock;
+    display: grid;
+    align-content: center;
 }
 
 
