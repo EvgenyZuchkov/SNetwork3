@@ -2,6 +2,7 @@ import React from "react";
 import s from './Dialogs.module.css'
 import DialogsItem from "./DialogsItem/DialogsItem";
 import Message from "./Message/Message";
+import {addMessageAC, updateMessageTextAC} from "../../Redux/State";
 
 
 const Dialogs = (props) => {
@@ -14,12 +15,12 @@ const Dialogs = (props) => {
     let avatarElements = state.dialogsData.map(a => <img src={a.avatar} />)
 
     let addMessage = () => {
-        props.dispatch({type: 'ADD-MESSAGE'})
+        props.dispatch(addMessageAC())
     }
 
     let updateMessageText = () => {
         let text = newMessageEl.current.value
-        props.dispatch({type: 'UPDATE-MESSAGE-TEXT', text})
+        props.dispatch(updateMessageTextAC(text))
     }
 
 
