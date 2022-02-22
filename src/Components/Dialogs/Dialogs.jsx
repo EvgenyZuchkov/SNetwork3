@@ -14,12 +14,12 @@ const Dialogs = (props) => {
     let avatarElements = state.dialogsData.map(a => <img src={a.avatar} />)
 
     let addMessage = () => {
-        props.addMessage()
+        props.dispatch({type: 'ADD-MESSAGE'})
     }
 
     let updateMessageText = () => {
         let text = newMessageEl.current.value
-        props.updateMessageText(text)
+        props.dispatch({type: 'UPDATE-MESSAGE-TEXT', text})
     }
 
 
